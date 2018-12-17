@@ -18,14 +18,11 @@
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "vue": "^2.5.17"
-<<<<<<< HEAD
     },
     "dependencies": {
         "laravel-echo": "^1.5.1",
         "socket.io": "^2.2.0",
         "socket.io-client": "^2.2.0",
         "socketio-auth": "^0.1.1"
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
     }
 }
