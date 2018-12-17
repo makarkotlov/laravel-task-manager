@@ -32,7 +32,6 @@ class TaskAdded implements ShouldBroadcast
         } else {
             $this->filePath = null;
         }
-
     }
 
     /**

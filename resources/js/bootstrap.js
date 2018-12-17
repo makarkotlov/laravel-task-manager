@@ -114,60 +114,61 @@ window.Echo.private('employees')
         $(document).ready(function () {
             if (window.Laravel.user == e.user) { //if it's the right user we need
                 alert('One of the tasks was DELETED!');
-                var nav = document.getElementById('bs-example-navbar-collapse-1');
-                var span = nav.getElementsByClassName('badge');
-                span[0].innerHTML = parseInt(span[0].innerHTML) - 1;
-                if (window.location.href == "http://task.loc/tasks") { //if on the right page
-                    var allbutton = document.getElementById('allbutton');
-                    var urgentbutton = document.getElementById('urgentbutton');
-                    var todaybutton = document.getElementById('todaybutton');
-                    var donebutton = document.getElementById('donebutton');
-                    var droptasks = document.getElementById('droptasks');
-                    var mustBeRow = droptasks.children[1]; //check the row div is there
-                    if (mustBeRow.classList.contains('row')) { //if any row exists
-                        if (allbutton.classList.contains("active")) { //if the right button is pushed
-                            $("#droptasks").each(function () {
-                                var a = $(this).find('a');
-                                var a_href = a.attr('href');
-                                if (a_href) {
-                                    if (a_href.substring(22, a_href.length + 1) == e.task.id) { //if cutted from href task_id is right
-                                        a.parent().fadeOut('slow');
-                                    }
-                                }
-                            });
-                        } else if (urgentbutton.classList.contains("active") && e.task.is_urgent === 1) {
-                            $("#droptasks").each(function () { //get task_id cutting the href 
-                                var a = $(this).find('a');
-                                var a_href = a.attr('href');
-                                if (a_href) {
-                                    if (a_href.substring(22, a_href.length + 1) == e.task.id) {
-                                        a.parent().fadeOut('slow');
-                                    }
-                                }
-                            });
-                        } else if (todaybutton.classList.contains("active") && e.task.is_urgent === 0) {
-                            $("#droptasks").each(function () { //get task_id cutting the href 
-                                var a = $(this).find('a');
-                                var a_href = a.attr('href');
-                                if (a_href) {
-                                    if (a_href.substring(22, a_href.length + 1) == e.task.id) {
-                                        a.parent().fadeOut('slow');
-                                    }
-                                }
-                            });
-                        } else if (donebutton.classList.contains("active") && e.task.is_done === 0) {
-                            $("#droptasks").each(function () { //get task_id cutting the href 
-                                var a = $(this).find('a');
-                                var a_href = a.attr('href');
-                                if (a_href) {
-                                    if (a_href.substring(22, a_href.length + 1) == e.task.id) {
-                                        a.parent().fadeOut('slow');
-                                    }
-                                }
-                            });
-                        }
-                    }
-                }
+                console.log(e);
+                // var nav = document.getElementById('bs-example-navbar-collapse-1');
+                // var span = nav.getElementsByClassName('badge');
+                // span[0].innerHTML = parseInt(span[0].innerHTML) - 1;
+                // if (window.location.href == "http://task.loc/tasks") { //if on the right page
+                //     var allbutton = document.getElementById('allbutton');
+                //     var urgentbutton = document.getElementById('urgentbutton');
+                //     var todaybutton = document.getElementById('todaybutton');
+                //     var donebutton = document.getElementById('donebutton');
+                //     var droptasks = document.getElementById('droptasks');
+                //     var mustBeRow = droptasks.children[1]; //check the row div is there
+                //     if (mustBeRow.classList.contains('row')) { //if any row exists
+                //         if (allbutton.classList.contains("active")) { //if the right button is pushed
+                //             $("#droptasks").each(function () {
+                //                 var a = $(this).find('a');
+                //                 var a_href = a.attr('href');
+                //                 if (a_href) {
+                //                     if (a_href.substring(22, a_href.length + 1) == e.task["id"]) { //if cutted from href task_id is right
+                //                         a.parent().fadeOut('slow');
+                //                     }
+                //                 }
+                //             });
+                //         } else if (urgentbutton.classList.contains("active") && e.task["is_urgent"] === 1) {
+                //             $("#droptasks").each(function () { //get task_id cutting the href 
+                //                 var a = $(this).find('a');
+                //                 var a_href = a.attr('href');
+                //                 if (a_href) {
+                //                     if (a_href.substring(22, a_href.length + 1) == e.task["id"]) {
+                //                         a.parent().fadeOut('slow');
+                //                     }
+                //                 }
+                //             });
+                //         } else if (todaybutton.classList.contains("active") && e.task["is_urgent"] === 0) {
+                //             $("#droptasks").each(function () { //get task_id cutting the href 
+                //                 var a = $(this).find('a');
+                //                 var a_href = a.attr('href');
+                //                 if (a_href) {
+                //                     if (a_href.substring(22, a_href.length + 1) == e.task["id"]) {
+                //                         a.parent().fadeOut('slow');
+                //                     }
+                //                 }
+                //             });
+                //         } else if (donebutton.classList.contains("active") && e.task["is_done"] === 0) {
+                //             $("#droptasks").each(function () { //get task_id cutting the href 
+                //                 var a = $(this).find('a');
+                //                 var a_href = a.attr('href');
+                //                 if (a_href) {
+                //                     if (a_href.substring(22, a_href.length + 1) == e.task["id"]) {
+                //                         a.parent().fadeOut('slow');
+                //                     }
+                //                 }
+                //             });
+                //         }
+                //     }
+                // }
             }
         });
     });

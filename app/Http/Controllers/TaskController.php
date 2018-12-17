@@ -10,6 +10,7 @@ use App\Task;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use App\Jobs\ProcessTaskDeleted;
 
 class TaskController extends Controller
 {
@@ -193,7 +194,8 @@ class TaskController extends Controller
     {
         $task = Task::find($id);
         $user = $request->user();
-        broadcast(new TaskDeleted($user, $task))->toOthers();
+        $taskArray = $task->toArray();
+        broadcast(new TaskDeleted($user, $taskArray))->toOthers();
         foreach ($task->get_image as $image) {
             $filepath = $image->file_path;
             if (File::exists($filepath)) {

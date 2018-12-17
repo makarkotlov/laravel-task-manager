@@ -139,10 +139,6 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 </body>
 
 </html>
-=======
-@endsection
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3

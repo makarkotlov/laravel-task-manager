@@ -1037,7 +1037,6 @@
             "time": "2018-07-02T15:55:56+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "predis/predis",
             "version": "v1.1.1",
             "source": {
@@ -1088,8 +1087,6 @@
             "time": "2016-06-16T16:22:20+00:00"
         },
         {
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
             "name": "psr/container",
             "version": "1.0.0",
             "source": {

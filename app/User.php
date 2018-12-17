@@ -15,7 +15,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-<<<<<<< HEAD
         'name',
         'last_name',
         'patronymic',
@@ -27,9 +26,6 @@ class User extends Authenticatable
         'is_admin',
         'created_at',
         'updated_at',
-=======
-        'name', 'email', 'password',
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
     ];
 
     /**
@@ -40,7 +36,6 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-<<<<<<< HEAD
 
     public function author()
     {
@@ -56,6 +51,4 @@ class User extends Authenticatable
     {
         return "{$this->name} {$this->last_name} {$this->patronymic}";
     }
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 }

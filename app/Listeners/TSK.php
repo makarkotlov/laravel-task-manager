@@ -1,10 +1,7 @@
 <?php
 
 namespace App\Listeners;
-
 use App\Events\TaskDeleted;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class TSK
 {
@@ -15,7 +12,7 @@ class TSK
      */
     public function __construct()
     {
-        //
+
     }
 
     /**
@@ -26,6 +23,7 @@ class TSK
      */
     public function handle(TaskDeleted $event)
     {
-        //
+        //dd($event->task);
+        //$event->task->delete();
     }
 }

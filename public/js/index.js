@@ -53,15 +53,4 @@ $(document).ready(function(){
     $("div.alert").fadeOut('slow');
     }, 2000 );
 
-    $("#les14_selectable").selectable({
-        selected: function(event, ui) {
-            var a = ui.selected;
-            if ($(a).hasClass("fruit")){
-                $("#les14_ex2").text("Да, " + ui.selected.innerHTML + " это фрукт! ");
-            }
-            else {
-                $("#les14_ex2").text("Нет, " + ui.selected.innerHTML + " это не фрукт! ");
-            }
-        }
-    })
   });

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Image;
 use App\Task;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\File;
 class TaskCompleteController extends Controller
 {
     /**

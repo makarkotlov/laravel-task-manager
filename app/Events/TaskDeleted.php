@@ -13,7 +13,7 @@ class TaskDeleted implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $task;
+    public $taskArray;
     public $user;
 
     /**
@@ -21,10 +21,10 @@ class TaskDeleted implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($user, $task)
+    public function __construct($user, $taskArray)
     {
-        $this->task = $task;
-        $this->user = $task->developer_id;
+        $this->task = $taskArray;
+        $this->user = $taskArray["developer_id"];
     }
 
     /**
@@ -36,7 +36,7 @@ class TaskDeleted implements ShouldBroadcast
     {
         return new PrivateChannel('employees');
     }
-
+    
     public function broadcastWith()
     {
         return [

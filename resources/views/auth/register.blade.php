@@ -77,7 +77,6 @@
                                 @endif
                             </div>
                         </div>
-<<<<<<< HEAD
                         <div class="form-group row">
                             <label for="department_id" class="col-md-4 col-form-label text-md-right">{{ __('Department') }}</label>
 
@@ -95,9 +94,6 @@
                                 @endif
                             </div>
                         </div>
-=======
-
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
