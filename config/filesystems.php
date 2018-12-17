@@ -63,15 +63,12 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
         ],
-<<<<<<< HEAD
         'public_files' => [
             'driver' => 'local',
             'root' => public_path(),
             'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ],
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 
     ],
 

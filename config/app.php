@@ -13,11 +13,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'name' => env('APP_NAME', 'Task Manager'),
-=======
-    'name' => env('APP_NAME', 'Laravel'),
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 
     /*
     |--------------------------------------------------------------------------
@@ -163,7 +159,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-<<<<<<< HEAD
         
 
 
@@ -172,8 +167,6 @@ return [
          */
         App\Providers\ComposerServiceProvider::class,
 
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 
         /*
          * Package Service Providers...
@@ -184,11 +177,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-<<<<<<< HEAD
         App\Providers\BroadcastServiceProvider::class,
-=======
-        // App\Providers\BroadcastServiceProvider::class,
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 

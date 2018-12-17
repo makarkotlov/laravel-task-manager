@@ -7,11 +7,7 @@
 
 require('./bootstrap');
 
-<<<<<<< HEAD
 // window.Vue = require('vue');
-=======
-window.Vue = require('vue');
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 
 /**
  * The following block of code may be used to automatically register your
@@ -21,11 +17,7 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-<<<<<<< HEAD
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
-=======
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 
 // const files = require.context('./', true, /\.vue$/i)
 
@@ -39,12 +31,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-<<<<<<< HEAD
 // const app = new Vue({
 //     el: '#app'
 // });
-=======
-const app = new Vue({
-    el: '#app'
-});
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3

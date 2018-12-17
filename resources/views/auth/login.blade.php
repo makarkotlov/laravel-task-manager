@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -80,18 +79,6 @@
                 <div class="card-header" >{{ __('Login') }}</div>
 
                 <div  class="card-body center" >
-=======
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

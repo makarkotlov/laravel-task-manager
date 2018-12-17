@@ -15,11 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-<<<<<<< HEAD
             $table->string('name');
-=======
-            $table->string('user_name');
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
             $table->string('last_name');
             $table->string('patronymic')->nullable();
             $table->string('email')->unique();
@@ -28,11 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->integer('department_id')->nullable();
-<<<<<<< HEAD
             $table->boolean('is_admin');
-=======
-            $table->boolean('is_task_author')->nullable();
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable();
         });

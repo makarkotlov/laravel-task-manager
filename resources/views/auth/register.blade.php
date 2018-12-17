@@ -24,7 +24,6 @@
                                 @endif
                             </div>
                         </div>
-<<<<<<< HEAD
                         <div class="form-group row">
                             <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
 
@@ -65,9 +64,6 @@
                             </div>
                         </div>
                         
-=======
-
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 

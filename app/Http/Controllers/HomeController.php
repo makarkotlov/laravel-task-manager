@@ -2,11 +2,6 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Http\Request;
-
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
 class HomeController extends Controller
 {
     /**

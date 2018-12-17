@@ -193,6 +193,7 @@ class TaskController extends Controller
     {
         $task = Task::find($id);
         $user = $request->user();
+        broadcast(new TaskDeleted($user, $task))->toOthers();
         foreach ($task->get_image as $image) {
             $filepath = $image->file_path;
             if (File::exists($filepath)) {
@@ -200,7 +201,6 @@ class TaskController extends Controller
             }
         }
         $task->delete();
-        broadcast(new TaskDeleted($user, $task))->toOthers();
         return redirect('tasks')->with('success', 'Task has been deleted Successfully');
     }
 }

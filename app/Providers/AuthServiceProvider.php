@@ -25,7 +25,6 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-<<<<<<< HEAD
         Gate::define('access_admin_page', function ($user) {
             if($user->is_admin == 1)
             {
@@ -33,8 +32,5 @@ class AuthServiceProvider extends ServiceProvider
             }
             return false;
         });
-=======
-        //
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
     }
 }

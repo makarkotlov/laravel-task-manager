@@ -18,15 +18,12 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
-<<<<<<< HEAD
         'App\Events\TaskAdded' => [
             'App\Listeners\SendNotification',
         ],
         'App\Events\TaskDeleted' => [
             'App\Listeners\TSK',
         ],
-=======
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
     ];
 
     /**

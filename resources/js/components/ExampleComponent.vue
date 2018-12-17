@@ -16,7 +16,6 @@
 
 <script>
     export default {
-<<<<<<< HEAD
         computed: {
             echoThread() { return window.Echo.private('employee.' + window.Laravel.user); },
         },
@@ -25,10 +24,6 @@
                 .listen('TaskAdded', (e) => {
                     console.log(e);
                 });
-=======
-        mounted() {
-            console.log('Component mounted.')
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
         }
     }
 </script>

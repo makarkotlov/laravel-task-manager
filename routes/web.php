@@ -11,7 +11,6 @@
 |
 */
 
-<<<<<<< HEAD
 
 Route::get('/', function () {return view('welcome');});
 Auth::routes();
@@ -51,12 +50,3 @@ Route::group(['middleware' => 'auth'], function (){
     Route::post('/ajax/fortaskedit', 'EmployeeController@ajax_for_task_edit');
     Route::post('/ajax/store', 'TaskController@store');
 });
-=======
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> 28c13ecc60d20bc1514693c719585652efc161b3
